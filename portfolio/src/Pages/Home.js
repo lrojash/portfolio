@@ -4,7 +4,12 @@ import Earth from '../components/Earth'
 import '../styles/styles.css'
 import '../styles/home.css'
 
-function Home() {
+function Home(props) {
+
+    const onClick = () => {
+        props.history.push('/projects')
+    }
+
     return (
         <div className="home">
             <section className="intro">
@@ -18,7 +23,7 @@ function Home() {
                     </Suspense>
                 </Canvas>
             </div>
-            <button className="nav-button">
+            <button className="nav-button" onClick={onClick}>
                 View my work
             </button>
         </div>

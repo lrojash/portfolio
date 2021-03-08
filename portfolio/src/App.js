@@ -1,11 +1,11 @@
 import React from "react";
-import Home from './Pages/Home'
+import Router from './components/Router'
 import './styles/styles.css'
 // Lights
-function App() {
+function App(props) {
   return (
     <div>
-      <Home />
+      <Router {...props} />
     </div>
   );
 }

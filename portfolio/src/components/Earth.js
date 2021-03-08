@@ -23,7 +23,7 @@ function Earth() {
 
     return (
         <group>
-            <ambientLight intensity={3.5} />
+            <ambientLight intensity={2.50} />
             <mesh ref={setRef}>
                 <sphereBufferGeometry attach="geometry" args={[2.2, 64, 64]} />
                 <meshPhongMaterial  attach="material" map={texture} bumpMap={bump} bumpScale={.005} specular={'grey'} specularMap={spec} />

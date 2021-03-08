@@ -3,9 +3,11 @@ import React from 'react'
 const Projects = () => {
     return (
         <div>
-            Projects
+            <h1>
+                Projects
+            </h1>
         </div>
     )
 }
 
-export default Projects 
+export default Projects
