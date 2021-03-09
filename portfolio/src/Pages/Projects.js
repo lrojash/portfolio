@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../components/Card'
 
 const Projects = () => {
     return (
@@ -6,6 +7,7 @@ const Projects = () => {
             <h1>
                 Projects
             </h1>
+            <Card />
         </div>
     )
 }
