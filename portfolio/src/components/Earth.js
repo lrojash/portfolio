@@ -6,6 +6,7 @@ import earthSpec from '../images/earthspec1k.jpg'
 import * as THREE from 'three'
 
 
+
 function Earth() {
     const [ref, setRef] = useState()
     const texture = useLoader(THREE.TextureLoader, earthImg)

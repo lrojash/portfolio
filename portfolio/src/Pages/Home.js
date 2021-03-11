@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { Canvas } from 'react-three-fiber'
 import Earth from '../components/Earth'
+
 import '../styles/styles.css'
 import '../styles/home.css'
 
@@ -29,4 +30,4 @@ function Home(props) {
         </div>
     )
 }
-export default Home 
+export default Home

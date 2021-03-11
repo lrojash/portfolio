@@ -117,5 +117,5 @@
     background-image: url(../images/bakstabber.png);
 }   
 .scene:nth-child(3) .project-info header {
-    background-image: url(../images/mern.png);
+    background-image: url(../images/mern.png );
 }
