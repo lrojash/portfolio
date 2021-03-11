@@ -8,6 +8,7 @@
 }
 .intro {
     /* border: 2px solid green; */
+    position: relative;
     color: white;
     text-align: center;
     font-size: 200%;

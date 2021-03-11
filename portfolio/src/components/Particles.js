@@ -12,6 +12,9 @@ const Particle = () => (
         }}
     >
         <Particles
+            canvasClassName="particle-canvas"
+            height="100vh"
+            width="100vw"
             params={{
                 particles: {
                     number: {
