@@ -1,0 +1,23 @@
+.about {
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    color: white;
+    height: 25vh;
+}
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    align-items: center;
+    justify-items: center;
+}
