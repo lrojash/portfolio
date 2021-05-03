@@ -3,7 +3,7 @@ import '../styles/techs.scss'
 
 function Techs() {
   return (
-    <div className="tech-container">
+    <div className="tech-container" style={{ fontSize: '1.2rem' }}>
       <div className="tech">JavaScript</div>
       <div className="tech">HTML</div>
       <div className="tech">CSS</div>
