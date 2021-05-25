@@ -1,0 +1,26 @@
+.about {
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Patrick Hand', sans-serif;
+}
+.text {
+    color: white;
+    height: 30vh;
+    width: 60vw;
+    align-self: center;
+}
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    align-items: center;
+    justify-items: center;
+}

@@ -1,0 +1,38 @@
+$tech-bg: #08126dcd;
+
+.tech {
+    animation: 1s ease 0s pulse infinite;
+    background: $tech-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 4.5em; 
+    color: rgb(3, 237, 31);
+    border-radius: 20%;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px  rgba(75, 189, 22, 0.123);
+}
+@for $i from 1 through 12 {
+    .tech {
+        &:nth-child(#{$i}) {
+            animation-delay: $i * ( 1s / 18);
+        }
+    }
+}
+@keyframes pulse {
+    0% {
+        background: $tech-bg;
+        transform: scale(1);
+      }
+      
+      25% {
+        background: darken($tech-bg, 10%);
+        transform: scale(1.015);
+      }
+      
+      50% {
+        background: $tech-bg;
+        transform: scale(1);
+      }
+}

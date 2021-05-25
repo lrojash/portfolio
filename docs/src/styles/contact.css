@@ -1,0 +1,46 @@
+.container {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+input {
+    width: 22vw;
+}
+textarea {
+    width: 22vw;
+}
+form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5%;
+}
+.section-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    color: white;
+    font-size: xx-large;
+}
+.col-md-6 {
+    margin-top: 2em;
+}
+.form-group {
+    margin-top: 2em;
+}
+.primary-btn {
+    margin-top: 2em;
+    width: 5em;
+    align-self: center;
+    margin-bottom: 2em;
+}
+.contact-links{ 
+    margin-top: 2em;
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+}
