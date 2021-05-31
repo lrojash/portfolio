@@ -40,6 +40,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs.js"></script>
+<script>
+    window.DD_LOGS && DD_LOGS.init({
+        clientToken: '<CLIENT_TOKEN>',
+        site: 'datadoghq.com',
+        forwardErrorsToLogs: true,
+        sampleRate: 100
+    });
+</script>
 <script
     src="https://www.datadoghq-browser-agent.com/datadog-rum.js"
     type="text/javascript">
@@ -56,4 +65,5 @@
         trackInteractions: true
     });
 </script>
+
 </html>
