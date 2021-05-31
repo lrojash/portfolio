@@ -36,3 +36,19 @@ $tech-bg: #08126dcd;
         transform: scale(1);
       }
 }
+@-moz-keyframes pulse {
+  0% {
+    background: $tech-bg;
+    transform: scale(1);
+  }
+  
+  25% {
+    background: darken($tech-bg, 10%);
+    transform: scale(1.015);
+  }
+  
+  50% {
+    background: $tech-bg;
+    transform: scale(1);
+  }
+}
