@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "@datadog/browser-logs": "^2.11.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -11,7 +12,7 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dd-trace": "^0.34.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "node-sass": "^5.0.0",
     "nodemailer": "^6.5.0",

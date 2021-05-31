@@ -1,5 +1,16 @@
 // Datadog tracing to APM
 const tracer = require('dd-trace').init();
+require('dotenv').config();
+
+// Adding logs
+import { datadogLogs } from '@datadog/browser-logs';
+ datadogLogs.init({
+     clientToken: process.env.TOKEN,
+     site: 'datadoghq.com',
+     forwardErrorsToLogs: true,
+     sampleRate: 100
+ });
+
 
 
 
@@ -7,7 +18,6 @@ const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
