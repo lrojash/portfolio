@@ -1,3 +1,5 @@
+import { datadogRum } from '@datadog/browser-rum';
+
 // Datadog tracing to APM
 const tracer = require('dd-trace').init({
     logInjection: true
@@ -12,7 +14,15 @@ import { datadogLogs } from '@datadog/browser-logs';
      forwardErrorsToLogs: true,
      sampleRate: 100
  });
-
+// Adding Broswer
+datadogRum.init({
+    applicationId: process.env.APP_ID,
+    clientToken: process.env.CLIENT_TOKEN,
+    site: 'datadoghq.com',
+    service: '-https://lrojasportfolio.herokuapp.com/',
+    sampleRate: 100,
+    trackInteractions: true
+})
 
 
 
