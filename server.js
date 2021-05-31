@@ -1,4 +1,5 @@
 import { datadogRum } from '@datadog/browser-rum';
+import { datadogLogs } from '@datadog/browser-logs';
 
 // Datadog tracing to APM
 const tracer = require('dd-trace').init({
@@ -7,8 +8,8 @@ const tracer = require('dd-trace').init({
 require('dotenv').config();
 
 // Adding logs
-import { datadogLogs } from '@datadog/browser-logs';
- datadogLogs.init({
+
+datadogLogs.init({
      clientToken: process.env.TOKEN,
      site: 'datadoghq.com',
      forwardErrorsToLogs: true,
@@ -21,7 +22,7 @@ datadogRum.init({
     site: 'datadoghq.com',
     service:'-https://lrojasportfolio.herokuapp.com/',
     // Specify a version number to identify the deployed version of your application in Datadog 
-    // version: '1.0.0',
+    version: '1.0.0',
     sampleRate: 100,
     trackInteractions: true
 });
