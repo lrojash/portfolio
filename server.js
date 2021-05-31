@@ -16,13 +16,15 @@ import { datadogLogs } from '@datadog/browser-logs';
  });
 // Adding Broswer
 datadogRum.init({
-    applicationId: process.env.APP_ID,
-    clientToken: process.env.CLIENT_TOKEN,
+    applicationId: '57a2ee76-6934-442d-9fae-aa40d743e7aa',
+    clientToken: 'pubec59d654b295b7a7670be20ea9688e8f',
     site: 'datadoghq.com',
-    service: '-https://lrojasportfolio.herokuapp.com/',
+    service:'-https://lrojasportfolio.herokuapp.com/',
+    // Specify a version number to identify the deployed version of your application in Datadog 
+    // version: '1.0.0',
     sampleRate: 100,
     trackInteractions: true
-})
+});
 
 
 
