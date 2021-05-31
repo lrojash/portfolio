@@ -1,5 +1,7 @@
 // Datadog tracing to APM
-const tracer = require('dd-trace').init();
+const tracer = require('dd-trace').init({
+    logInjection: true
+});
 require('dotenv').config();
 
 // Adding logs
